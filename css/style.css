@@ -1,0 +1,378 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  /* height: 900px; */
+}
+
+header {
+  display: inline;
+}
+
+.navbar {
+  display: flex;
+  /* justify-content: space-between; */
+  width: 100% !;
+  height: 64px;
+  /* gap: 1rem; */
+  margin: 0;
+  padding: 8px 12px;
+  border: 1px solid whitesmoke;
+  position: sticky;
+}
+
+.nav1 {
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  align-self: center;
+  width: 250px;
+  padding: 0 30px 0 0;
+  /* gap: 1em; */
+}
+
+.nav1 .hummenu-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+}
+
+.nav1 .hummenu-nav span {
+  max-width: 24px;
+  margin-inline: 4px;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.nav1 .nav-logo {
+  width: 64px;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.nav1 .nav-logo img {
+  display: flex;
+  max-width: 48px;
+}
+
+.nav2 {
+  width: 70em;
+  display: flex;
+}
+
+.nav2 .nav-form {
+  display: inline-flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  align-self: center;
+  /* width: 40em; */
+  height: 46px;
+  border: 1px solid whitesmoke;
+  border-radius: 12px;
+  background-color: whitesmoke;
+}
+
+.nav2 .nav-form span {
+  max-width: 24px;
+  margin: 3px;
+  padding: 8px;
+}
+
+.nav2 .nav-form .nav-search,
+.nav2 .nav-form .search-close {
+  padding-inline: 5px;
+  cursor: pointer;
+}
+
+.nav2 .nav-form input {
+  width: 45em;
+  height: 24px;
+  padding: 8px;
+  margin: 0;
+  border: none;
+  outline: none;
+  padding: 11px 0px;
+  background-color: whitesmoke;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.nav3 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  align-self: center;
+  margin-left: 3em;
+}
+
+.nav3 span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+  max-width: 100px;
+  margin-inline: 4px;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.nav3 .user {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.nav3 div:hover,
+.nav1 .hummenu-nav:hover {
+  background-color: whitesmoke;
+  border-radius: 99px;
+}
+
+.nav2 .nav-form span:hover {
+  background-color: #fff;
+  border-radius: 99px;
+}
+
+header .hum-menu {
+  display: none;
+  /* position: absolute; */
+  justify-content: space-between;
+  width: 18%;
+  /* border: 1px solid black; */
+}
+
+.hum-menu ul {
+  padding: 0;
+}
+
+.hum-menu li,
+a {
+  font-family: Arial, sans-serif;
+  font-size: large;
+  font-weight: 600;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+.hum-menu li {
+  display: flex;
+  width: 80%;
+  height: 48px;
+  align-items: center;
+  align-self: center;
+  font-size: larger;
+  padding: 0 0 0 1em;
+  cursor: pointer;
+}
+
+.hum-menu li:hover {
+  background-color: whitesmoke;
+  border-top-right-radius: 99px;
+  border-bottom-right-radius: 99px;
+}
+
+.hum-menu span {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  margin-inline-end: 12px;
+  font-size: 1.5rem;
+  min-height: 24px;
+  min-width: 30px;
+}
+
+.hum-menu span i {
+  line-height: 24px;
+}
+
+main {
+  display: block;
+  /* height: 100px;
+  width: 100%; */
+  background-color: white;
+  padding: 24px 18px;
+}
+
+.content-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+main .content-cont .add-note {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 550px;
+  height: 150px;
+  border: 1px solid whitesmoke;
+  border-radius: 18px;
+  background-color: whitesmoke;
+}
+
+.content-cont .add-note input,
+.content-cont .add-note textarea {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  min-width: 85%;
+  padding-block: 9px 10px;
+  margin-inline: 18px;
+  font-size: 1.1rem;
+  font-family: "Times New Roman", Times, serif;
+  resize: none;
+}
+
+#input1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+textarea::-webkit-scrollbar {
+  width: 0px;
+}
+
+.content-cont .add-note .make-btn {
+  display: flex;
+  width: 85%;
+  justify-content: flex-end;
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+
+.content-cont .add-note span {
+  width: 25px;
+  height: 25px;
+  /* line-height: 25px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-cont .add-note .make-btn:hover span {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.notesContainer {
+  margin: 40px 20px;
+}
+
+.notesContainer h2 {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+#notes-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  /* flex-direction: row-reverse; */
+  gap: 1.5em;
+  padding-inline-start: 0px !important;
+  /* width: 100%; */
+  flex-wrap: wrap;
+}
+
+#notes-list .note-item {
+  /* display: inline-flex; */
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  border: 1.5px solid whitesmoke;
+  border-radius: 9px;
+  background-color: whitesmoke;
+  /* padding: 12px; */
+  width: 250px;
+  max-height: fit-content;
+}
+
+.note-item .content-note h3 {
+  padding: 14px 12px 0px;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  max-height: 50px;
+  overflow-y: auto;
+  overflow-x: auto;
+  scrollbar-width: none;
+  text-indent: 5px;
+}
+
+.note-item .content-note p {
+  margin: 0;
+  padding: 12px 14px;
+  min-height: 120px;
+  max-height: 250px;
+  /* text-wrap: inherit; */
+  overflow-y: auto;
+  scrollbar-width: none;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.note-item .buttons-container {
+  display: flex;
+  width: 90%;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 1.15rem;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.buttons-container span {
+  width: 30px;
+  height: 30px;
+  /* line-height: 25px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons-container .edit:hover span,
+.buttons-container .delete:hover span {
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* Update */
+#notes-list input {
+  padding: 14px 12px 0px;
+  margin: 0;
+  border: none;
+  border-radius: 99px;
+  outline: none;
+  background-color: whitesmoke;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 18.72px;
+  text-indent: 5px;
+  text-wrap: initial;
+  max-width: 226px;
+  overflow-y: auto;
+}
+
+#notes-list textarea {
+  margin: 12px 0 0 0;
+  padding: 0px 14px 12px;
+  width: 222.012px;
+  min-height: 120px;
+  max-height: 250px;
+  font-family: "Times New Roman", Times, serif;
+  border: none;
+  outline: none;
+  resize: none;
+  background-color: whitesmoke;
+  font-size: 16px;
+}

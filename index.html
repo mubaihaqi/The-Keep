@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Keep</title>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Google Fonts Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JQuery -->
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <!-- JS -->
+    <script src="app.js"></script>
+
+    <!-- Icon Style -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav1">
+          <div class="hummenu-nav">
+            <span><i class="fa-solid fa-bars"></i></span>
+          </div>
+          <div class="nav-logo">
+            <img src="img/pencil.png" alt="notebook" />
+          </div>
+          <div class="nav-title">
+            <h1>The Keep</h1>
+          </div>
+        </div>
+
+        <div class="nav2">
+          <div class="nav-form">
+            <div class="nav-search">
+              <span><i class="fa-solid fa-magnifying-glass"></i></span>
+            </div>
+            <div class="search-input">
+              <input type="text" placeholder="Telusuri" />
+            </div>
+            <div class="search-close">
+              <span><i class="fa-solid fa-xmark"></i></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav3">
+          <div class="nav-refresh">
+            <span><i class="fa-solid fa-rotate-right"></i></span>
+          </div>
+          <div class="nav-setting">
+            <span><i class="fa-solid fa-gear"></i></span>
+          </div>
+          <div class="user">
+            <span><i class="fa-regular fa-user"></i></span>
+          </div>
+        </div>
+      </nav>
+
+      <div class="hum-menu">
+        <div class="hum-menu-list">
+          <ul>
+            <li>
+              <span><i class="fa-solid fa-lightbulb"></i></span>
+              <a href="#">Catatan</a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-box-archive"></i></span>
+              <a href="#">Arsip</a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-trash"></i></span>
+              <a href="#">Sampah</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="content-cont">
+        <div class="add-note">
+          <input type="text" id="input1" placeholder="Judul" required />
+          <textarea id="input2" placeholder="Isi Catatan" required></textarea>
+          <div class="make-btn">
+            <span><i class="fa-solid fa-plus"></i></span>
+          </div>
+
+          <script>
+            const textarea = document.querySelector("#input2");
+            textarea.addEventListener("keyup", (e) => {
+              textarea.style.height = "auto";
+              let scHeight = e.height.scroll;
+              textarea.style.height = "${scHeight}px";
+            });
+          </script>
+        </div>
+      </div>
+      <div class="notesContainer">
+        <h2>Catatan Anda</h2>
+        <ul id="notes-list"></ul>
+      </div>
+    </main>
+  </body>
+</html>
